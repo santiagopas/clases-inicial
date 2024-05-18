@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../styles/index.css" />
+</head>
+
+<body>
+	<header class="cabecera">
+		<nav class="navegacion">
+			<div>
+				<img src="https://i.pinimg.com/236x/db/31/5a/db315a6647c7f14efb3064e5e286e2a2.jpg" width="80"
+					height="80" />
+				Ligo leyens
+				<span>
+					<h2>juego apto para mancos</h2>
+				</span>
+			</div>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="./registro.html">Registro</a></li>
+				<li><a href="./nosotros.html">Nosotros</a></li>
+			</ul>
+
+		</nav>
+	</header>
+	<section>
+		<form class="formulario" id="idForm">
+			<label for="nombre">Nombre:
+				<input type="text" name="nombre" placeholder="ingresa tus nombres" class="campo">
+			</label>
+			<br />
+			<label for="apellido" >
+				Apellido:
+				<input type="text" name="apellido" placeholder="ingresa tus apellidos" class="campo">
+			</label>
+			<br />
+			<label>
+				Email:
+				<input type="email" name="email" placeholder="****@gmail.com" autocomplete="off" class="campo">
+			</label>
+			<br />
+			<label>
+				Contraseña:
+				<input type="password" name="Contraseña" placeholder="*********" class="campo">
+			</label>
+			<label for="eye">
+			<input type="checkbox" name="eye" class="eye"> Mostrar clave
+		</label>
+			<br />
+			<button type="submit" name="enviar">Enviar</button>
+		</form>
+	</section>
+
+	<script>
+		const openEye = document.querySelector('.eye');
+		const password = document.querySelector('input[type="password"]');
+		openEye.addEventListener('click', () => {
+			if (password.type === 'password') {
+				password.type = 'text';
+			} else {
+				password.type = 'password';
+			}
+		});
+
+	</script>
+</body>
+
+</html>

@@ -12,7 +12,7 @@ document.querySelector('#app').innerHTML = `
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
-    <h2>Clase 1!</h2>
+    <h2>Clase!</h2>
     <div class="card">
       <button id="counter" type="button"></button>
       <button id="reset" type="button"></button>

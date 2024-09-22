@@ -2,6 +2,7 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
+import { resetCounter } from './resetCounter.js' 
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -11,14 +12,16 @@ document.querySelector('#app').innerHTML = `
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
-    <h1>Hello Vite!</h1>
+    <h2>Contador con JS!</h2>
     <div class="card">
       <button id="counter" type="button"></button>
+      <button id="reset" type="button"></button>
     </div>
     <p class="read-the-docs">
-      Click on the Vite logo to learn more
+      Click en el logo de vite para aprender más
     </p>
   </div>
 `
 
 setupCounter(document.querySelector('#counter'))
+resetCounter(document.querySelector('#reset'))
